@@ -10,3 +10,11 @@ Follow the following steps :
 - Git clone the project
 - Install the requirements
 - Launch the tests with python manage.py test
+
+# Using Celery and Redis
+
+If you want to test the application live, you can launch Redis with :
+redis-server
+
+Then, in another terminal, start celery with:
+celery -A tradecore worker -l info
